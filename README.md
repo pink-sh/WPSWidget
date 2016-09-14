@@ -48,26 +48,26 @@ var wps = new BlueBridgeWPSClient({
 
 Here below an explanation of all available parameters:
 
-*wps_username (mandatory):*
+**wps_username *(mandatory)*:**
 Your WPS username.
 
-*wps_token (mandatory):*
+**wps_token *(mandatory)*:**
 Your WPS token.
 
-*experiment_identifier (mandatory):*
+**experiment_identifier *(mandatory)*:**
 Is the ID of the experiment available in the WPS.
 
-*container (mandatory):*
+**container *(mandatory)*:**
 Is the ID of the div where you want the widget to be attached to.
 
-*expands (optional):*
+**expands *(optional)*:**
 boolean value true|false (default is false), if set to true it will explode the contents of the resulting ZIP files rendering the contents. The rendering is available for PDF, PNG, JPEG, HTML, CSV and TXT files. Note that in the case the user's browser has not a PDF viewer the widget will fallback and will show a link where the user can download the PDF.
 
-*style (optional):*
+**style *(optional)*:**
 horizontal|vertical (default horizontal), sets the style for the rendering of the widget.
 
-*include (optional):*
+**include *(optional)*:**
 if expands is set to true you can use this option to pass an array of file names to be included in the rendering. For example if the zip file has 10 files but you want to show just 3 of those you can tell the widget which files to show.
 
-*exclude (optional):*
+**exclude *(optional)*:**
 It is like the *include* option but here you define the files to be exluded. This option is skipped if the *include* option is set.
