@@ -260,6 +260,7 @@ function BlueBridgeWPSClient(options) {
 
 	this.runExperiment = function() {
 		var results = $(this.container).find("#bb_widg_res_out");
+		$(this.container).find("#bb_right_exp").empty();
 		results.empty();
 		results.append($("<img>").attr("src", "http://vps282167.ovh.net/BlueBridgeWPSClient/img/wait_progress.gif"));
 		var c = $(this.container);
