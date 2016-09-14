@@ -44,6 +44,8 @@ var wps = new BlueBridgeWPSClient({
 </body>
 ```
 
+You can actually use multiple instance of the widget within the same page.
+
 ##Parameters
 
 Here below an explanation of all available parameters:
