@@ -72,4 +72,4 @@ horizontal|vertical (default horizontal), sets the style for the rendering of th
 if expands is set to true you can use this option to pass an array of file names to be included in the rendering. For example if the zip file has 10 files but you want to show just 3 of those you can tell the widget which files to show.
 
 **exclude *(optional)*:**
-It is like the *include* option but here you define the files to be exluded. This option is skipped if the *include* option is set.
+It is like the **include** option but here you define the files to be exluded. This option is skipped if the **include** option is set.
