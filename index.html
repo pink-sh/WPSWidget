@@ -1,0 +1,25 @@
+<!doctype html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+<head>
+	<title>BlueBridge WPS Client</title>
+	<link rel="stylesheet" href="https://vps282167.ovh.net/BlueBridgeWPSClient/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://vps282167.ovh.net/BlueBridgeWPSClient/css/wpsclient.css">
+	<script src="https://vps282167.ovh.net/BlueBridgeWPSClient/js/jquery.min.js"></script>
+	<script src="http://vps282167.ovh.net/BlueBridgeWPSClient/js/bootstrap.min.js"></script>
+	<script src="https://vps282167.ovh.net/BlueBridgeWPSClient/js/wpsclient.min.js"></script>
+	<script src="http://vps282167.ovh.net/BlueBridgeWPSClient/js/wpsclient_tools.min.js"></script>
+	<script>
+		$(document).ready(function() { 
+			var wps = new BlueBridgeWPSClient({
+				'wps_username' : 'xxxxxxxxxxxxxxx', 
+				'wps_token' : 'xxxxxxxxxxxxxxxxxxx',
+				'experiment_identifier' : 'org.gcube.dataanalysis.wps.statisticalmanager.synchserver.mappedclasses.transducerers.TUNA_ATLAS_DATA_ACCESS',
+				'container' : 'experiment'
+			}).init();
+		});
+	</script>
+</head>
+<body>
+	<div id="experiment"></div>
+</body>
+</html>
