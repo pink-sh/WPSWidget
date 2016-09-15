@@ -326,7 +326,7 @@ function BlueBridgeWPSClient(options) {
 										})
 									});
 									Promise.all(promises).then(function() {
-										var ul = $("<ul>").attr("class", "nav nav-tabs");
+										var ul = $("<ul>").attr("class", "nav nav-tabs").attr("id", "bb_results_tab_pane");
 										var tabContents = $("<div>").attr("class", "tab-content").attr("style", "height: 100vh; width: 100%;");
 										var pdfDivList = [];
 										var filteredFileList = that.filterFileList(fileList);
@@ -376,6 +376,8 @@ function BlueBridgeWPSClient(options) {
 											tabContents.append(iDiv);
 										}
 										$(that.container).find("#bb_right_exp").append(ul).append(tabContents);
+
+
 										//Appending PDFs
 										setTimeout(function() {
 											for (var i = 0; i < fileList.length; i++) {
@@ -392,6 +394,12 @@ function BlueBridgeWPSClient(options) {
 												}
 											}
 										}, 1000);
+										setTimeout(function() {
+											var firstLi = $("#bb_results_tab_pane li").first();
+											var firstTabAnchor = firstLi.find("a").first();
+											firstTabAnchor.click();
+											//$("#bb_results_tab_pane li").first().addClass("active");
+										}, 3000);
 										
 									});
 								});
